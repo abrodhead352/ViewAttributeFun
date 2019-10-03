@@ -17,10 +17,10 @@ public class MainActivity extends AppCompatActivity {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(b.getText().toString().equals("on")){
-                    b.setText("off");
+                if(b.getText().toString().equals(getString(R.string.on))){
+                    b.setText(getString(R.string.off));
                 } else {
-                    b.setText("on");
+                    b.setText(getString(R.string.on));
                 }
             }
         });
